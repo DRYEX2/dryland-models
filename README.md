@@ -5,7 +5,8 @@ Netlogo is a user-friendly simulation environment for agent based models that ca
 
 Netlogo can be used to communicate and explore the dynamics, since the user can modify the parameter settings live and see directly how the model responds. 
 
-This repository is intended for a series of models to explore the dynamics of dryland vegetation, initially developped in the projects DRYEX and DRYEX2. 
+This repository is intended for a series of models to explore the dynamics of dryland vegetation, initially developped in the projects DRYEX and DRYEX2.
+
   
 
 ## How to use
