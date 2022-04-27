@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2022 Francisco Rodríguez (adition of ecohydrological feedbacks)
+Copyright (c) 2022 Francisco Rodríguez (modifications and extensions: ecohydrological feedbacks, two species)
 
 Copyright (c) 2014 Florian D. Schneider (base facilitation model)
 
