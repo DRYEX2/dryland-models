@@ -134,7 +134,7 @@ end
 to flowlength   ;; flowlength for each patch
   let px1 pxcor
   let py1 pycor
-  let down_veg max-one-of patches with [state = 2 and pxcor = px1 and pycor <= py1] [pycor]
+  let down_veg max-one-of patches with [state >= 2 and pxcor = px1 and pycor <= py1] [pycor]
   ifelse down_veg = nobody
     [ set pfl  py1 + 1 ]
     [ set pfl  py1 - [pycor] of down_veg ]
@@ -143,7 +143,7 @@ end
 to reverse_fl   ;; flowlength received for each vegetated patch
   let px1 pxcor
   let py1 pycor
-  let up_veg min-one-of patches with [state = 2 and pxcor = px1 and pycor > py1] [pycor]
+  let up_veg min-one-of patches with [state >= 2 and pxcor = px1 and pycor > py1] [pycor]
   ifelse up_veg = nobody
     [ let distup max-pycor - py1 set localFL distup * (distup + 1 ) / 2 ]
     [ let distup  [pycor] of up_veg - py1 - 1 set localFL distup * (distup + 1 ) / 2 ]
