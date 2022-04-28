@@ -39,7 +39,7 @@ to init-globals
 end
 
 to init-patch
-  ifelse random-float 1 < initial_cover [ifelse random-float 1 < initial_cover * initial_proportion_sp1 [ set state 2] [set state 3]]
+  ifelse random-float 1 < initial_cover [ifelse random-float 1 < initial_proportion_sp1 [ set state 2] [set state 3]]
     [ifelse random-float 1 < degradation [set state 1] [set state 0]]
    color-patch
 end
